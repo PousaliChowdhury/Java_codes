@@ -1,3 +1,3 @@
-# Placement
+# Java_Codes
 
-Various companies coding round question in java
+Coding questions in java
