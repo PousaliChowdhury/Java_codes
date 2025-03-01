@@ -1,0 +1,20 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String input = s.nextLine();
+        String rev = new StringBuilder(input).reverse().toString();
+        
+        if(input.equals(rev))
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+    }
+}
+
+//123321
+//Yes
+
+//madam
+//Yes
