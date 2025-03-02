@@ -1,22 +1,25 @@
+
 import java.util.*;
 
 class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
+        Scanner s = new Scanner(System.in);
+        String input = s.nextLine();
+        String[] words = input.split(" ");
+        int length = 0;
+        String LongestWord = "";
         
-        String[] words = input.split("\\s+"); // Split by spaces
-        String maxWord = "";
-        
-        for(String word : words){
-            if(word.length() > maxWord.length()){
-                maxWord = word;
-            }
+        for(String word:words){
+            if(length < word.length()){
+                length = word.length();
+                LongestWord = word;
+            } 
         }
-        
-        System.out.println(maxWord);
+        System.out.println(LongestWord);
+        System.out.println(length);
     }
 }
 
-//I love coding
-//coding
+//I love painting and Reading
+//painting
+//8
