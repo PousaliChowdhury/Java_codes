@@ -5,8 +5,8 @@ class Main {
         Scanner s = new Scanner(System.in);
         int x = s.nextInt();
         
-        int fact = 1;
-        for(int i=1; i<=x; i++){
+        long fact = 1;
+        for(int i=2; i<=x; i++){
             fact *= i;
         }
         System.out.println(fact);
