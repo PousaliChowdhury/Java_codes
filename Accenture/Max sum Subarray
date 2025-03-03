@@ -1,4 +1,4 @@
-package Ac;
+
 import java.util.*;
 
 public class MaxSubarray {
