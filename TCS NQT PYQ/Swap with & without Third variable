@@ -1,0 +1,27 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int b = s.nextInt();
+        
+        //  Without Third Variable
+        a = a + b;
+        b = a - b;
+        a = a - b;
+        
+        //  With Third Variable
+        // int temp = a;
+        // a = b;
+        // b = temp;
+        
+        System.out.println(a + " " + b);
+        
+    }
+}
+
+Output
+5
+10
+10 5
