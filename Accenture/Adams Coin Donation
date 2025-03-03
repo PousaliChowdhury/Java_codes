@@ -1,4 +1,4 @@
-package Ac;
+
 // Starting from today as Day 1 adams start doneting coins, he will give i^2 coins at ith day, Calculate totalCoins
 
 import java.util.Scanner;
