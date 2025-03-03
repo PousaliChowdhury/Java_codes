@@ -20,3 +20,12 @@ public static boolean isLeapYear(int year){
         return false;
     return year % 4;
 }
+public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int year = s.nextInt();
+        
+        if(isLeapYear(year)
+            System.out.println("Yes");
+        else
+            System.out.println("No");
+}
