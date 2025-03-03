@@ -1,4 +1,4 @@
-package Ac;
+
 // Sum of smallest & largest element of array
 
 import java.util.Scanner;
