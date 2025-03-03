@@ -1,0 +1,30 @@
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int arr[] = new int[n];
+        
+        for(int i=0; i<n; i++){
+            arr[i] = s.nextInt();
+        }
+        
+        Map<Integer,Integer> FrequencyMap = new HashMap<>();
+        
+        for(int num:arr){
+            FrequencyMap.put(num, FrequencyMap.getOrDefault(num,0)+1);
+        }
+        for(Map.Entry<Integer,Integer> entry:FrequencyMap.entrySet()){
+            System.out.println(entry.getKey() + "->" + entry.getValue());
+        }
+    }
+}
+
+
+Output
+6
+10 5 10 15 10 5
+5->2
+10->3
+15->1
