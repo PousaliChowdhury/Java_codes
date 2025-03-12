@@ -1,0 +1,31 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String args[]){
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        
+        int arr[] = new int[n];
+        int original[] = new int[n];
+        for(int i=0; i<n; i++){
+            original[i] = s.nextInt();
+            arr[i] = original[i];
+        }
+        
+        Arrays.sort(arr);
+        Map<Integer, Integer> rankMap = new HashMap<>();
+        
+        int rank = 1;
+        for(int i=0; i<n; i++){
+            if(!rankMap.containsKey(arr[i])){
+                rankMap.put(arr[i],rank);
+                rank++;
+            }
+        }
+        
+        for(int i=0; i<n; i++){
+            System.out.print(rankMap.get(original[i])  + " ");
+        }
+        
+    }
+}
