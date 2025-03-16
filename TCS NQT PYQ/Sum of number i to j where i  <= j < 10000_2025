@@ -24,6 +24,15 @@ public class Main {
     }
     
     public static long sum(long i, long j){
-        return j*(j+1)/2 - i*(i-1)/2;
+        return j*(j+1)/2 - i*(i-1)/2; // j*(j+1)/2 this means Sn & i*(i-1)/2 means subtract the sum till first number
     }
 }
+
+
+Output
+0 3
+6
+3 6
+18 
+0 10001
+Invalid input i&j i  <= j < 10000
