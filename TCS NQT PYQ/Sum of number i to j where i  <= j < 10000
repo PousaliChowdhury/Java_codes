@@ -1,0 +1,29 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String st = s.nextLine().trim();
+        // trim() Method is a built-in function used to remove leading and trailing whitespace from a string
+        String values[] = st.split(" ");
+        
+        if(values.length < 2)
+            System.out.println("Invalid input i&j i  <= j < 10000");
+        try{
+            long i = Integer.parseInt(values[0]);
+            long j = Integer.parseInt(values[1]);
+            if(i >= j || j > 10000 || i < 0)
+                System.out.println("Invalid input i&j i  <= j < 10000");
+            else
+                System.out.print(sum(i,j) + " ");
+        }
+        
+        catch(Exception e){
+            System.out.println("Invalid input i&j i  <= j < 10000");
+        }
+    }
+    
+    public static long sum(long i, long j){
+        return j*(j+1)/2 - i*(i-1)/2;
+    }
+}
